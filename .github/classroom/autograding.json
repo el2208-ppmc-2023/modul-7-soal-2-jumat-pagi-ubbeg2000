@@ -1,0 +1,104 @@
+{
+  "tests": [
+    {
+      "name": "1",
+      "setup": "make main",
+      "run": "./main",
+      "input": "history1.txt",
+      "output": "Kondisi Tablet of Founder sebelum Undounus Incantatem & Redolus Revelio\r\nx * * - * * x \r\n* x * - * x * \r\n* * x - x * * \r\n- - - * - - - \r\n* * x - x * * \r\n* x * - * x * \r\nx * * - * * x \r\nKondisi Akhir Tablet of Founder Setelah Transfigurasi\r\nx * * - * * - \r\n* x * - * x * \r\n* * x - x * * \r\n- - - o - - - \r\n* * x - x * * \r\n* x * - * x * \r\nx * * - * * x ",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "2",
+      "setup": "",
+      "run": "./main",
+      "input": "history2.txt",
+      "output": "Kondisi Tablet of Founder sebelum Undounus Incantatem & Redolus Revelio\r\no * * - * * o \r\n* o * - * o * \r\n* * o - o * * \r\n- - - o - - - \r\n* * o - o * * \r\n* o * - * o * \r\no * * - * * o \r\nKondisi Akhir Tablet of Founder Setelah Transfigurasi\r\no * * - * * o \r\n* o * - * o * \r\n* * o - x * * \r\n- - - o - - - \r\n* * x - o * * \r\n* x * - * o * \r\no * * - * * o ",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "3",
+      "setup": "",
+      "run": "./main",
+      "input": "history3.txt",
+      "output": "Kondisi Tablet of Founder sebelum Undounus Incantatem & Redolus Revelio\r\no * * - * * o \r\n* x * - * x * \r\n* * x - x * * \r\n- - - o - - - \r\n* * x - x * * \r\n* x * - * x * \r\no * * - * * o \r\nKondisi Akhir Tablet of Founder Setelah Transfigurasi\r\no * * - * * o \r\n* x * - * x * \r\n* * x - x * * \r\n- - - x - - - \r\n* * x - x * * \r\n* x * - * x * \r\no * * - * * o ",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "4",
+      "setup": "",
+      "run": "./main",
+      "input": "history4.txt",
+      "output": "Kondisi Tablet of Founder sebelum Undounus Incantatem & Redolus Revelio\r\no * * - * * o \r\n* x * - * x * \r\n* * x - x * * \r\nm m m m m m m \r\n* * x - x * * \r\n* x * - * x * \r\no * * - * * o \r\nKondisi Akhir Tablet of Founder Setelah Transfigurasi\r\no * * - * * o \r\n* x * - * x * \r\n* * x - x * * \r\nm m m m m m m \r\n* * x - x * * \r\n* x * - * x * \r\no * * - * * o ",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "5",
+      "setup": "",
+      "run": "./main",
+      "input": "history5.txt",
+      "output": "Kondisi Tablet of Founder sebelum Undounus Incantatem & Redolus Revelio\r\nx x x - * * o \r\nx x x - * x * \r\nx x x - x * * \r\n- - - x - - - \r\n* * x - x x x \r\n* x * - x x x \r\no * * - x x x \r\nKondisi Akhir Tablet of Founder Setelah Transfigurasi\r\nx x x - * * o \r\nx x x - * x * \r\nx x x - x * * \r\n- - - x - - - \r\n* * x - x * * \r\n* x * - * x * \r\no * * - * * o ",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "6",
+      "setup": "",
+      "run": "./main",
+      "input": "history6.txt",
+      "output": "Kondisi Tablet of Founder sebelum Undounus Incantatem & Redolus Revelio\r\nx * * - * * x \r\n* x * - * x * \r\n* * x - x * * \r\n- - - * - - - \r\n* * x - x * * \r\n* x * - * x * \r\nx * * - * * x \r\nKondisi Akhir Tablet of Founder Setelah Transfigurasi\r\nx * * - * * o  \r\n* x * - * x * \r\n* * x - x * * \r\n- - - o - - - \r\n* * x - x * * \r\n* x * - * x * \r\no * * - * * o ",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "7",
+      "setup": "",
+      "run": "./main",
+      "input": "history7.txt",
+      "output": "Kondisi Tablet of Founder sebelum Undounus Incantatem & Redolus Revelio\r\no * * - * * o \r\n* o * - * o * \r\n* * o - o * * \r\n- - - o - - - \r\n* * o - o * * \r\n* o * - * o * \r\no * * - * * o \r\nKondisi Akhir Tablet of Founder Setelah Transfigurasi\r\no * * - * * o \r\n* o * - * x * \r\n* * o - x * * \r\n- - - o - - - \r\n* * x - o * * \r\n* x * - * o * \r\no * * - * * o ",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "8",
+      "setup": "",
+      "run": "./main",
+      "input": "history8.txt",
+      "output": "Kondisi Tablet of Founder sebelum Undounus Incantatem & Redolus Revelio\r\no * * - * * o \r\n* x * - * x * \r\n* * x - x * * \r\n- - - o - - - \r\n* * x - x * * \r\n* x * - * x * \r\no * * - * * o \r\nKondisi Akhir Tablet of Founder Setelah Transfigurasi\r\no * * - * * o \r\n* x * - * x * \r\n* * x - x * * \r\n- - - o - - - \r\n* * x - x * * \r\n* x * - * x * \r\no * * - * * o ",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "9",
+      "setup": "",
+      "run": "./main",
+      "input": "history9.txt",
+      "output": "Kondisi Tablet of Founder sebelum Undounus Incantatem & Redolus Revelio\r\no * * - * * o \r\n* x * - * x * \r\n* * x - x * * \r\nm m m m m m m \r\n* * x - x * * \r\n* x * - * x * \r\no * * - * * o \r\nKondisi Akhir Tablet of Founder Setelah Transfigurasi\r\no * * - * * o \r\n* x * - * x * \r\n* * x - x * * \r\n- - - x - - - \r\n* * x - x * * \r\n* x * - * x * \r\no * * - * * o ",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "10",
+      "setup": "",
+      "run": "./main",
+      "input": "history10.txt",
+      "output": "Kondisi Tablet of Founder sebelum Undounus Incantatem & Redolus Revelio\r\nx x x - * * o \r\nx x x - * x * \r\nx x x - x * * \r\n- - - x - - - \r\n* * x - x x x \r\n* x * - x x x \r\no * * - x x x \r\nKondisi Akhir Tablet of Founder Setelah Transfigurasi\r\nx x x - * * o \r\nx x x - * x * \r\nx x x - x * * \r\n- - - x - - - \r\n* * x - x x x \r\n* x * - x x x \r\no * * - * * o ",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 10
+    }
+  ]
+}
