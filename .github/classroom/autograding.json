@@ -55,7 +55,7 @@
       "setup": "",
       "run": "./main",
       "input": "history6.txt",
-      "output": "Kondisi Tablet of Founder sebelum Undounus Incantatem & Redolus Revelio\r\nx * * - * * x \r\n* x * - * x * \r\n* * x - x * * \r\n- - - * - - - \r\n* * x - x * * \r\n* x * - * x * \r\nx * * - * * x \r\nKondisi Akhir Tablet of Founder Setelah Transfigurasi\r\nx * * - * * o  \r\n* x * - * x * \r\n* * x - x * * \r\n- - - o - - - \r\n* * x - x * * \r\n* x * - * x * \r\no * * - * * o ",
+      "output": "Kondisi Tablet of Founder sebelum Undounus Incantatem & Redolus Revelio\r\nx * * - * * x \r\n* x * - * x * \r\n* * x - x * * \r\n- - - * - - - \r\n* * x - x * * \r\n* x * - * x * \r\nx * * - * * x \r\nKondisi Akhir Tablet of Founder Setelah Transfigurasi\r\nx * * - * * o \r\n* x * - * x * \r\n* * x - x * * \r\n- - - o - - - \r\n* * x - x * * \r\n* x * - * x * \r\no * * - * * o ",
       "comparison": "included",
       "timeout": 1,
       "points": 10
