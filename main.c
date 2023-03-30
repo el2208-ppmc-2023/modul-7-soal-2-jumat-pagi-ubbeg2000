@@ -44,31 +44,29 @@ int main(){
     }
     else{
         // Lanjutkan program jika file valid
-        display_undo_redo(n_undo_redo,undo_redo_list); // Tampilkan array of char dari daftar undo redo yang dilakukan, silahkan comment jika sudah tidak diperlukan
-        display_history(n_history,history_list); // Tampilkan array of struct history, silahkan comment jika sudah tidak diperlukan
+        // display_undo_redo(n_undo_redo,undo_redo_list); // Tampilkan array of char dari daftar undo redo yang dilakukan, silahkan comment jika sudah tidak diperlukan
+        // display_history(n_history,history_list); // Tampilkan array of struct history, silahkan comment jika sudah tidak diperlukan
 
         // Inisialisasi Tablet of Founder
-        printf("Kondisi Awal Tablet of Founder\n"); // Untuk debugging, comment jika sudah tidak diperlukan
-        print_tof(tof); // Untuk debugging, comment jika sudah tidak diperlukan
+        // printf("Kondisi Awal Tablet of Founder\n"); // Untuk debugging, comment jika sudah tidak diperlukan
+        // print_tof(tof); // Untuk debugging, comment jika sudah tidak diperlukan
 
+        // Tambahkan pemanggilan fungsi atau kode yang diperlukan
         // Deklarasi stack transfiguration magic
         transfiguration_magic* tm_stack = (transfiguration_magic*)malloc(sizeof(transfiguration_magic));
         initialize_transfiguration_magic(&tm_stack);
 
-        
         // Lakukan perubahan pada ToF sesuai data perubahan yang terjadi
-        // Tambahkan pemanggilan fungsi atau kode yang diperlukan
-        
+        overall_change_tof(tof,tm_stack,n_history,history_list);
         printf("Kondisi Tablet of Founder sebelum Undounus Incantatem & Redolus Revelio\n");
         print_tof(tof);
 
         // Lakukan Undounus Incantatem atau Redolus Revelio sesuai data
-        // Tambahkan pemanggilan fungsi atau kode yang diperlukan
-
+        cast_spell(tof,tm_stack,n_undo_redo,undo_redo_list);
         printf("Kondisi Akhir Tablet of Founder Setelah Transfigurasi\n");
         print_tof(tof);
 
-
+        free(tm_stack);
     }
     
     free(undo_redo_list);
