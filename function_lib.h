@@ -8,7 +8,6 @@
 *   Deskripsi           : Program merupakan header dari function_lib.c
 */ 
 
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -38,8 +37,6 @@ typedef struct transfiguration_magic{
     stack* present;
     stack* temp;
 } transfiguration_magic;
-
-// Tambahkan fungsi jika diperlukan
 
 /** @brief Fungsi digunakan untuk menampilkan interface awal dan input nama file 
  * @param file_name Variabel yang digunakan untuk menyimpan string nama file
