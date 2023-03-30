@@ -136,13 +136,20 @@ void initialize_transfiguration_magic(transfiguration_magic** tm_pointer){
 }
 
 void change_tof(char tof[n_tof][n_tof],transfiguration_magic* state, history* new_change){
-    // Buat Implementasi fungsi
-
+    // Ganti posisi next dan head dari stack
+    new_change->next = state->present->head;
+    state->present->head = new_change;
+    // Simpan nilai sebelum terjadinya perubahan
+    new_change->prev_state = tof[new_change->row][new_change->col];
+    // Lakukan perubahan pada Tablet of Founder di elemen bersangkutan
+    tof[new_change->row][new_change->col] = new_change->new_state;
 }
 
 void overall_change_tof(char tof[n_tof][n_tof],transfiguration_magic* state, int n_history_list, history* history_list){
-    // Buat Implementasi Fungsi
-
+    // Lakukan perubahan pada ToF berdasarkan daftar perubahan yang terjadi
+    for(int i=0; i<n_history_list;i++){
+        change_tof(tof,state,&history_list[i]);
+    }
 }
 
 void undounus_incantatem(char tof[n_tof][n_tof],transfiguration_magic* state){
@@ -151,8 +158,12 @@ void undounus_incantatem(char tof[n_tof][n_tof],transfiguration_magic* state){
     if(history_temp!=NULL){
         char state_temp = history_temp->prev_state;
         // Pindahkan head dari stack present ke stack temp
-        // Lanjutkan implementasi fungsi  
-
+        state->present->head = history_temp->next;
+        history_temp->prev_state = history_temp->new_state;
+        history_temp->new_state = state_temp;
+        tof[history_temp->row][history_temp->col] = history_temp->new_state;
+        history_temp->next = state->temp->head;
+        state->temp->head = history_temp;
     }
 }
 
@@ -162,10 +173,25 @@ void redolus_revelio(char tof[n_tof][n_tof],transfiguration_magic* state){
     if(history_temp!=NULL){
         char state_temp = history_temp->prev_state;
         // Pindahkan head dari stack temp ke stack present
-        // Lanjutkan implementasi fungsi
+        state->temp->head = history_temp->next;
+        history_temp->prev_state = history_temp->new_state;
+        history_temp->new_state = state_temp;
+        tof[history_temp->row][history_temp->col] = history_temp->new_state;
+        history_temp->next = state->present->head;
+        state->present->head = history_temp;
     }
 }
 
 void cast_spell(char tof[n_tof][n_tof],transfiguration_magic* state,int n_undo_redo, char* undo_redo_list){
-    // Tuliskan implementasi fungsi
+    for(int i=0; i<n_undo_redo; i++){
+        if(undo_redo_list[i]=='U'){
+            undounus_incantatem(tof,state);
+            // printf("Undo %d\n",i); // Debugging
+        }
+        else if(undo_redo_list[i]=='R'){
+            redolus_revelio(tof,state);
+            // printf("Redo %d\n",i); // Debugging
+        }
+        // print_tof(tof); // Debugging
+    }
 }
